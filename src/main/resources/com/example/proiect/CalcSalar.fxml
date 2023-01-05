@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiect.CalcSalarController">
+   <children>
+      <Button fx:id="adaugare" layoutX="91.0" layoutY="334.0" mnemonicParsing="false" onAction="#adaugare" onMouseClicked="#adaugare" text="Adauga!">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="75.0" layoutY="31.0" prefHeight="27.0" prefWidth="86.0" text="ID salariat">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="131.0" prefHeight="27.0" prefWidth="58.0" text="Bonus">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="234.0" prefHeight="27.0" prefWidth="86.0" text="Concediu">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id" layoutX="43.0" layoutY="76.0" />
+      <TextField fx:id="bonus" layoutX="43.0" layoutY="174.0" />
+      <TextField fx:id="concediu" layoutX="43.0" layoutY="277.0" />
+      <Label layoutX="243.0" layoutY="45.0" prefHeight="44.0" prefWidth="333.0" text="Adauga bonus sau zilele de concediu!">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="198.0" fitWidth="296.0" layoutX="262.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@money.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="inapoi" layoutX="374.0" layoutY="335.0" mnemonicParsing="false" onAction="#inapoi" onMouseClicked="#inapoi" text="Go back" />
+
+   </children>
+</AnchorPane>
