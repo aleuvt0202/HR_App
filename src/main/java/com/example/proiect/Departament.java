@@ -13,7 +13,6 @@ import java.sql.*;
 public class Departament {
     String dept, locatie;
     int deptNr;
-    private ObservableList<ObservableList> data;
 
     public Departament(){};
 

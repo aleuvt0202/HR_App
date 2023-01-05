@@ -5,28 +5,28 @@ public class Confidential extends Angajat{
 
     public Confidential(){};
 
-    public Confidential(int salar, int bonus, int concediu) {
-       // this.angID=angID;
+    public Confidential(int angID, String nume, String prenume,int salar, int bonus, int concediu) {
+        this.angID=angID;
         this.salar = salar;
         this.bonus = bonus;
         this.concediu = concediu;
-       // this.nume=nume;
-      //  this.prenume=prenume;
+        this.nume=nume;
+        this.prenume=prenume;
     }
 
-    public int addBonus(int n, int bonus){
+    public void addBonus(int n, int bonus){
         int t=n+ bonus;
-        return t;
+        System.out.println(t);
     }
 
-    public int addConcediu(int n, int concediu){
-        int c=n+ concediu;
-        return c;
+    public void addConcediu(int n, int concediu){
+        int c=n+concediu;
+        System.out.println(c);
     }
 
-    public int CalcSalar(int salar, int bonus){
+    public void CalcSalar(int salar, int bonus){
         int d=salar+bonus;
-        return d;
+        System.out.println(d);
     };
 
     @Override
