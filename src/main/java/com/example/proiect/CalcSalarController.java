@@ -44,7 +44,7 @@ public class CalcSalarController {
     }
 
 
-    public void adaugare(javafx.event.Event actionEvent) throws SQLException {
+    public void update(javafx.event.Event actionEvent) throws SQLException {
         if((id.getText()).equals("")){
             System.out.println("Alo scrie id");
         }
@@ -52,15 +52,13 @@ public class CalcSalarController {
             DataBase connectionClass = new DataBase();
             Connection connection = connectionClass.getConnection();
 
-            bonus.getText();
-            id.getText();
-            concediu.getText();
+            String sql = "update confidential set bonus=?, concediu=? where angID=?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(3, Integer.parseInt(id.getText()));
+            preparedStatement.setInt(1, Integer.parseInt(bonus.getText()));
+            preparedStatement.setInt(2, Integer.parseInt(concediu.getText()));
+            preparedStatement.executeUpdate();
 
-            String sql = "update confidential set bonus = 'bonus', concediu='concediu' where angID = 'id';";
-            Statement statement = connection.createStatement();
-            statement.executeUpdate(sql);
-
-            concediu.getText();
 
         }
 

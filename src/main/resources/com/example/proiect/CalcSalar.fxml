@@ -2,6 +2,8 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -10,7 +12,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiect.CalcSalarController">
    <children>
-      <Button fx:id="adaugare" layoutX="91.0" layoutY="334.0" mnemonicParsing="false" onAction="#adaugare" onMouseClicked="#adaugare" text="Adauga!">
+      <Button fx:id="adaugare" layoutX="120.0" layoutY="334.0" mnemonicParsing="false" onAction="#update" onMouseClicked="#update" text="Adauga!">
          <font>
             <Font size="13.0" />
          </font>
@@ -33,17 +35,28 @@
       <TextField fx:id="id" layoutX="43.0" layoutY="76.0" />
       <TextField fx:id="bonus" layoutX="43.0" layoutY="174.0" />
       <TextField fx:id="concediu" layoutX="43.0" layoutY="277.0" />
-      <Label layoutX="243.0" layoutY="45.0" prefHeight="44.0" prefWidth="333.0" text="Adauga bonus sau zilele de concediu!">
+      <Label layoutX="243.0" layoutY="23.0" prefHeight="44.0" prefWidth="333.0" text="Adauga bonus sau zilele de concediu!">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <ImageView fitHeight="198.0" fitWidth="296.0" layoutX="262.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="126.0" fitWidth="296.0" layoutX="289.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@money.png" />
          </image>
       </ImageView>
-      <Button fx:id="inapoi" layoutX="374.0" layoutY="335.0" mnemonicParsing="false" onAction="#inapoi" onMouseClicked="#inapoi" text="Go back" />
+      <Button fx:id="inapoi" layoutX="45.0" layoutY="335.0" mnemonicParsing="false" onAction="#inapoi" onMouseClicked="#inapoi" text="Go back">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <TableView layoutX="289.0" layoutY="71.0" prefHeight="160.0" prefWidth="241.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="angID" />
+          <TableColumn prefWidth="75.0" text="salar" />
+           <TableColumn prefWidth="75.0" text="bonus" />
+           <TableColumn prefWidth="75.0" text="concediu" />
+        </columns>
+      </TableView>
 
    </children>
 </AnchorPane>

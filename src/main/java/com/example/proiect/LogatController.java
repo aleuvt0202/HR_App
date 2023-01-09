@@ -1,5 +1,6 @@
 package com.example.proiect;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -34,10 +35,12 @@ public class LogatController {
         window.setScene(new Scene(root, 600, 400));
     }
     public void handleAng(ActionEvent actionEvent) throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Angajati.fxml"));
 
         Stage window= (Stage) concediu.getScene().getWindow();
         window.setScene(new Scene(root, 600, 400));
+
     }
+
 
 }

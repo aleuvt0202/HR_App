@@ -11,24 +11,15 @@ import javax.swing.table.TableColumn;
 import java.sql.*;
 
 public class Departament {
-    String dept, locatie;
-    int deptNr;
+    String dept, locatie, deptNr;
 
     public Departament(){};
 
-    public Departament(String dept, String locatie, int deptNr) {
+    public Departament(String dept, String locatie, String deptNr) {
         this.dept = dept;
         this.locatie = locatie;
         this.deptNr = deptNr;
     }
 
 
-    @Override
-    public String toString() {
-        return "Departament[" +
-                "dept='" + dept + '\'' +
-                ", locatie='" + locatie + '\'' +
-                ", deptNr=" + deptNr +
-                ']';
-    }
 }

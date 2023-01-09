@@ -1,12 +1,22 @@
 package com.example.proiect;
 
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
 public class Angajat extends Departament{
-    String nume, prenume, dataAng;
-    int angID;
+    String nume, prenume, dataAng, angID;
 
     public Angajat(){};
 
-    public Angajat(int deptNr, String nume, String prenume, int angID, String dataAng) {
+    public Angajat(String deptNr, String nume, String prenume, String angID, String dataAng) {
         this.deptNr=deptNr;
         this.nume = nume;
         this.prenume = prenume;
@@ -26,7 +36,7 @@ public class Angajat extends Departament{
         this.dataAng = dataAng;
     }
 
-    public void setAngID(int angID) {
+    public void setAngID(String angID) {
         this.angID = angID;
     }
 
@@ -42,17 +52,9 @@ public class Angajat extends Departament{
         return dataAng;
     }
 
-    public int getAngID() {
+    public String getAngID() {
         return angID;
     }
 
-    @Override
-    public String toString() {
-        return "Angajat[" +
-                "nume='" + nume + '\'' +
-                ", prenume='" + prenume + '\'' +
-                ", andID=" + angID +
-                ", dataAng=" + dataAng +
-                ", deptNr=" + deptNr  + ']';
-    }
+
 }

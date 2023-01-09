@@ -2,6 +2,7 @@ package com.example.proiect;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
 
 public class DataBase {
@@ -18,6 +19,15 @@ public class DataBase {
         }
 
         return con;
+    }
+    public void dbDisconnect() throws SQLException {
+        try {
+            if (con != null && !con.isClosed()) {
+                con.close();
+            }
+        } catch (Exception e){
+            throw e;
+        }
     }
 
 }

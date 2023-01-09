@@ -33,6 +33,7 @@ public class HelloApplication extends Application {
         DataBase db=new DataBase();
         db.getConnection();
 
+
         } catch (IOException e){
             e.printStackTrace();
         }

@@ -5,7 +5,7 @@ public class Confidential extends Angajat{
 
     public Confidential(){};
 
-    public Confidential(int angID, String nume, String prenume,int salar, int bonus, int concediu) {
+    public Confidential(String angID, String nume, String prenume,int salar, int bonus, int concediu) {
         this.angID=angID;
         this.salar = salar;
         this.bonus = bonus;
