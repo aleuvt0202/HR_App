@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -11,23 +12,57 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiect.CompanieController">
    <children>
-      <Label layoutX="28.0" layoutY="31.0" prefHeight="34.0" prefWidth="147.0" text="Company info">
+      <Label layoutX="28.0" layoutY="17.0" prefHeight="34.0" prefWidth="147.0" text="Company info">
          <font>
             <Font size="23.0" />
          </font>
       </Label>
-      <ImageView fitHeight="257.0" fitWidth="221.0" layoutX="365.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="182.0" fitWidth="264.0" layoutX="28.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@company.png" />
+            <Image url="@corp.png" />
          </image>
       </ImageView>
-      <TableView fx:id="tabel" layoutX="28.0" layoutY="83.0" onSort="#buildData" prefHeight="250.0" prefWidth="324.0">
+      <TableView fx:id="tabel" layoutX="309.0" layoutY="51.0" prefHeight="176.0" prefWidth="278.0">
         <columns>
-          <TableColumn fx:id="dept" prefWidth="96.0" text="Departament" />
-          <TableColumn fx:id="loc" prefWidth="129.5999755859375" text="Locatie" />
-            <TableColumn fx:id="id" prefWidth="97.5999755859375" text="ID" />
+          <TableColumn fx:id="coldept" prefWidth="96.0" text="Departament" />
+          <TableColumn fx:id="colloc" prefWidth="99.20001220703125" text="Locatie" />
+            <TableColumn fx:id="colnr" prefWidth="79.199951171875" text="Numar" />
         </columns>
       </TableView>
-      <Button fx:id="inapoi" layoutX="446.0" layoutY="52.0" mnemonicParsing="false" onAction="#inapoi" onMouseClicked="#inapoi" text="Go back" />
+      <Button fx:id="inapoi" layoutX="518.0" layoutY="233.0" mnemonicParsing="false" onAction="#inapoi" onMouseClicked="#inapoi" text="Go back" />
+      <Label layoutX="28.0" layoutY="232.0" prefHeight="27.0" prefWidth="192.0" text="Adaugare departament">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nume" layoutX="28.0" layoutY="269.0" text="Nume">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="loc" layoutX="28.0" layoutY="306.0" prefHeight="26.0" prefWidth="60.0" text="Locatie">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="nr" layoutX="28.0" layoutY="347.0" prefHeight="26.0" prefWidth="60.0" text="Numar">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nume1" layoutX="101.0" layoutY="269.0" />
+      <TextField fx:id="loc1" layoutX="102.0" layoutY="307.0" />
+      <TextField fx:id="nr1" layoutX="103.0" layoutY="348.0" />
+      <Button fx:id="adauga" layoutX="319.0" layoutY="233.0" mnemonicParsing="false" onMouseClicked="#adaugare" text="Adauga!" />
+      <Label fx:id="text" layoutX="309.0" layoutY="21.0" prefHeight="26.0" prefWidth="278.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="348.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@c.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

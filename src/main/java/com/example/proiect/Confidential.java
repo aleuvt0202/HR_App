@@ -1,43 +1,75 @@
 package com.example.proiect;
 
-public class Confidential extends Angajat{
-    int salar, bonus, concediu;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
 
-    public Confidential(){};
+public class Confidential{
+    private IntegerProperty idP;
+    private IntegerProperty salarP;
+    private IntegerProperty bonusP;
+    private IntegerProperty concediuP;
 
-    public Confidential(String angID, String nume, String prenume,int salar, int bonus, int concediu) {
-        this.angID=angID;
-        this.salar = salar;
-        this.bonus = bonus;
-        this.concediu = concediu;
-        this.nume=nume;
-        this.prenume=prenume;
-    }
-
-    public void addBonus(int n, int bonus){
-        int t=n+ bonus;
-        System.out.println(t);
-    }
-
-    public void addConcediu(int n, int concediu){
-        int c=n+concediu;
-        System.out.println(c);
-    }
-
-    public void CalcSalar(int salar, int bonus){
-        int d=salar+bonus;
-        System.out.println(d);
+    public Confidential(){
+        this.idP= new SimpleIntegerProperty();
+        this.salarP=new SimpleIntegerProperty();
+        this.bonusP=new SimpleIntegerProperty();
+        this.concediuP=new SimpleIntegerProperty();
     };
 
-    @Override
-    public String toString() {
-        return "Confidential[" +
-                "salar=" + salar +
-                ", bonus=" + bonus +
-                ", concediu=" + concediu +
-                ", nume='" + nume + '\'' +
-                ", prenume='" + prenume + '\'' +
-                ", andID=" + angID +  ']';
+    //angID
+    public int getIdP() {
+        return idP.get();
     }
+
+    public void setIdP(int idP) {
+        this.idP.set(idP);
+    }
+
+    public IntegerProperty getIDP() {
+        return idP;
+    }
+
+    //salar
+    public int getSalarP() {
+        return salarP.get();
+    }
+
+    public void setSalarP(int salarP) {
+        this.salarP.set(salarP);
+
+    }
+
+    public IntegerProperty getSP() {
+        return salarP;
+    }
+
+    //bonus
+    public int getBonusP() {
+        return bonusP.get();
+    }
+
+    public void setBonusP(int bonusP) {
+        this.bonusP.set(bonusP);
+    }
+
+    public IntegerProperty getBP() {
+        return bonusP;
+    }
+
+    //concediu
+    public int getConcediuP() {
+        return concediuP.get();
+    }
+
+    public void setConcediuP(int concediuP) {
+        this.concediuP.set(concediuP);
+    }
+
+    public IntegerProperty getCP() {
+        return concediuP;
+    }
+
+
+
 
 }

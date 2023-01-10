@@ -11,8 +11,8 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class Angajat extends Departament{
-    String nume, prenume, dataAng, angID;
+public class Angajat{
+    String nume, prenume, dataAng, angID, deptNr;
 
     public Angajat(){};
 

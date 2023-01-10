@@ -49,6 +49,11 @@
                   <Font size="18.0" />
                </font>
             </Label>
+            <Label fx:id="eroare" layoutX="34.0" layoutY="336.0" prefHeight="31.0" prefWidth="262.0" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>

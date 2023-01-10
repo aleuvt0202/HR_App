@@ -1,25 +1,55 @@
 package com.example.proiect;
 
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.value.ObservableValue;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.util.Callback;
-
-import javax.swing.table.TableColumn;
-import java.sql.*;
+import javafx.beans.property.StringProperty;
 
 public class Departament {
-    String dept, locatie, deptNr;
+    private StringProperty dept;
+    private StringProperty locatie;
+    private IntegerProperty deptNr;
 
-    public Departament(){};
 
-    public Departament(String dept, String locatie, String deptNr) {
-        this.dept = dept;
-        this.locatie = locatie;
-        this.deptNr = deptNr;
+    public Departament() {
+        this.dept= new SimpleStringProperty();
+        this.locatie=new SimpleStringProperty();
+        this.deptNr=new SimpleIntegerProperty();
     }
 
+    public String getDept() {
+        return dept.get();
+    }
 
+    public StringProperty deptProperty() {
+        return dept;
+    }
+
+    public void setDept(String dept) {
+        this.dept.set(dept);
+    }
+
+    public String getLocatie() {
+        return locatie.get();
+    }
+
+    public StringProperty locatieProperty() {
+        return locatie;
+    }
+
+    public void setLocatie(String locatie) {
+        this.locatie.set(locatie);
+    }
+
+    public int getDeptNr() {
+        return deptNr.get();
+    }
+
+    public IntegerProperty deptNrProperty() {
+        return deptNr;
+    }
+
+    public void setDeptNr(int deptNr) {
+        this.deptNr.set(deptNr);
+    }
 }

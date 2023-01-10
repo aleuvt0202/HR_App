@@ -27,6 +27,7 @@ public class HelloController {
     private Label eroare;
     private Connection connection;
 
+
     @FXML
     public void logat(ActionEvent actionEvent) throws SQLException, ClassNotFoundException {
 
@@ -57,7 +58,7 @@ public class HelloController {
 
                     }
                     else{
-                        eroare.setText("Nu i bine");
+                        eroare.setText("Ati introdus gresit datele!");
                     }
                 }
             }catch(Exception e){
@@ -65,7 +66,7 @@ public class HelloController {
             }
         }
         else {
-            //showAlert(Alert.AlertType.ERROR, gridPane.getScene().getWindow(), "Eroare!", "Introdu username-ul si parola!");
+            eroare.setText("Nu ati introdus nimic!");
         }
 
 
