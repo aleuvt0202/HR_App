@@ -76,7 +76,7 @@ public class CalcSalarController {
             DataBase connectionClass = new DataBase();
             Connection connection = connectionClass.getConnection();
 
-            String sql = "update confidential set bonus=?, concediu=? where angID=?";
+            String sql = "update conf set bonus=?, concediu=? where angID=?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(3, Integer.parseInt(id.getText()));
             preparedStatement.setInt(1, Integer.parseInt(bonus.getText()));
@@ -93,7 +93,7 @@ public class CalcSalarController {
         DataBase connectionClass = new DataBase();
         Connection connection = connectionClass.getConnection();
 
-        String sql="select * from confidential";
+        String sql="select * from conf";
 
         try{
             Statement statement = connection.createStatement();

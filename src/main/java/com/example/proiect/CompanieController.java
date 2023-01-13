@@ -67,7 +67,7 @@ public class CompanieController {
             DataBase connectionClass = new DataBase();
             Connection connection = connectionClass.getConnection();
 
-            String sql = "insert into departament(dept,deptLoc,deptNr) values (?,?,?)";
+            String sql = "insert into dept(dept,deptLoc,deptNr) values (?,?,?)";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, nume1.getText());
             preparedStatement.setString(2, loc1.getText());
@@ -85,7 +85,7 @@ public class CompanieController {
         DataBase connectionClass = new DataBase();
         Connection connection = connectionClass.getConnection();
 
-        String sql="select * from departament";
+        String sql="select * from dept";
 
         try{
             Statement statement = connection.createStatement();

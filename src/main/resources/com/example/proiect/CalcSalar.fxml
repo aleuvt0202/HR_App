@@ -12,7 +12,7 @@
 
 <AnchorPane prefHeight="389.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiect.CalcSalarController">
    <children>
-      <Button fx:id="adaugare" layoutX="80.0" layoutY="229.0" mnemonicParsing="false" onAction="#update" onMouseClicked="#update" text="update">
+      <Button id="glass" fx:id="adaugare" layoutX="80.0" layoutY="229.0" mnemonicParsing="false" onAction="#update" onMouseClicked="#update" stylesheets="@style.css" text="update">
          <font>
             <Font size="13.0" />
          </font>
@@ -45,11 +45,11 @@
             <Image url="@money.png" />
          </image>
       </ImageView>
-      <Button fx:id="inapoi" layoutX="510.0" layoutY="338.0" mnemonicParsing="false" onAction="#inapoi" onMouseClicked="#inapoi" text="Go back">
+      <Button id="glass" fx:id="inapoi" layoutX="510.0" layoutY="338.0" mnemonicParsing="false" onAction="#inapoi" onMouseClicked="#inapoi" stylesheets="@style.css" text="Go back">
          <font>
             <Font size="13.0" />
          </font></Button>
-      <TableView fx:id="viz" layoutX="258.0" layoutY="65.0" prefHeight="262.0" prefWidth="302.0">
+      <TableView fx:id="viz" layoutX="258.0" layoutY="65.0" prefHeight="262.0" prefWidth="302.0" stylesheets="@table.css">
         <columns>
           <TableColumn id="id" fx:id="colID" prefWidth="75.0" text="angID" />
           <TableColumn id="salar" fx:id="colSal" prefWidth="75.0" text="salar" />

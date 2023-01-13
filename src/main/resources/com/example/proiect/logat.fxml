@@ -14,9 +14,9 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Button fx:id="viz" layoutX="31.0" layoutY="138.0" mnemonicParsing="false" onAction="#handleComp" onMouseClicked="#handleComp" prefHeight="26.0" prefWidth="170.0" text="Companie" />
-      <Button fx:id="calc" layoutX="31.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleCalc" onMouseClicked="#handleCalc" prefHeight="26.0" prefWidth="170.0" text="Salar-Bonus-Concediu" />
-      <Button fx:id="concediu" layoutX="31.0" layoutY="231.0" mnemonicParsing="false" onAction="#handleAng" onMouseClicked="#handleAng" prefHeight="26.0" prefWidth="170.0" text="Angajati" />
+      <Button id="glass" fx:id="viz" layoutX="31.0" layoutY="138.0" mnemonicParsing="false" onAction="#handleComp" onMouseClicked="#handleComp" prefHeight="26.0" prefWidth="170.0" stylesheets="@style.css" text="Companie" />
+      <Button id="glass" fx:id="calc" layoutX="31.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleCalc" onMouseClicked="#handleCalc" prefHeight="26.0" prefWidth="170.0" stylesheets="@style.css" text="Salar-Bonus-Concediu" />
+      <Button id="glass" fx:id="concediu" layoutX="31.0" layoutY="231.0" mnemonicParsing="false" onAction="#handleAng" onMouseClicked="#handleAng" prefHeight="26.0" prefWidth="170.0" stylesheets="@style.css" text="Angajati" />
       <Label layoutX="13.0" layoutY="74.0" prefHeight="40.0" prefWidth="205.0" text="Bine ati revenit!">
          <font>
             <Font size="28.0" />

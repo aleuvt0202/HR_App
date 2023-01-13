@@ -22,14 +22,14 @@
             <Image url="@corp.png" />
          </image>
       </ImageView>
-      <TableView fx:id="tabel" layoutX="309.0" layoutY="51.0" prefHeight="176.0" prefWidth="278.0">
+      <TableView fx:id="tabel" layoutX="309.0" layoutY="51.0" prefHeight="176.0" prefWidth="278.0" stylesheets="@table.css">
         <columns>
-          <TableColumn fx:id="coldept" prefWidth="96.0" text="Departament" />
-          <TableColumn fx:id="colloc" prefWidth="99.20001220703125" text="Locatie" />
-            <TableColumn fx:id="colnr" prefWidth="79.199951171875" text="Numar" />
+          <TableColumn fx:id="coldept" prefWidth="89.60003662109375" text="Departament" />
+          <TableColumn fx:id="colloc" prefWidth="84.00006103515625" text="Locatie" />
+            <TableColumn fx:id="colnr" prefWidth="101.5999755859375" text="Numar" />
         </columns>
       </TableView>
-      <Button fx:id="inapoi" layoutX="518.0" layoutY="233.0" mnemonicParsing="false" onAction="#inapoi" onMouseClicked="#inapoi" text="Go back" />
+      <Button id="glass" fx:id="inapoi" layoutX="518.0" layoutY="233.0" mnemonicParsing="false" onAction="#inapoi" onMouseClicked="#inapoi" stylesheets="@style.css" text="Go back" />
       <Label layoutX="28.0" layoutY="232.0" prefHeight="27.0" prefWidth="192.0" text="Adaugare departament">
          <font>
             <Font size="18.0" />
@@ -53,7 +53,7 @@
       <TextField fx:id="nume1" layoutX="101.0" layoutY="269.0" />
       <TextField fx:id="loc1" layoutX="102.0" layoutY="307.0" />
       <TextField fx:id="nr1" layoutX="103.0" layoutY="348.0" />
-      <Button fx:id="adauga" layoutX="319.0" layoutY="233.0" mnemonicParsing="false" onMouseClicked="#adaugare" text="Adauga!" />
+      <Button id="glass" fx:id="adauga" layoutX="319.0" layoutY="233.0" mnemonicParsing="false" onMouseClicked="#adaugare" stylesheets="@style.css" text="Adauga!" />
       <Label fx:id="text" layoutX="309.0" layoutY="21.0" prefHeight="26.0" prefWidth="278.0">
          <font>
             <Font size="16.0" />

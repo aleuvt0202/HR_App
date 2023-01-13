@@ -35,7 +35,7 @@ public class HelloController {
             DataBase connectionClass = new DataBase();
             Connection connection = connectionClass.getConnection();
 
-            String sql = "select count(1) from users where username = '" + usernameFXML.getText() + "' and password = '"+passwordFXML.getText()+"';";
+            String sql = "select count(1) from user where username = '" + usernameFXML.getText() + "' and password = '"+passwordFXML.getText()+"';";
             try {
                 Statement statement = connection.createStatement();
                 ResultSet rs = statement.executeQuery(sql);
