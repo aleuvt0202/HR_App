@@ -20,7 +20,13 @@ public class LogatController {
     @FXML
     private Button concediu;
 
-
+    /**
+     * <h1>Pagina principala.</h1>
+     * In aceasta pagina se pot observa 3 butoane prin care putem
+     * <br>naviga prin aplicatie.
+     * @param actionEvent Pentru navigare.
+     * @throws IOException
+     */
     public void handleComp(ActionEvent actionEvent) throws IOException{
         Parent root = FXMLLoader.load(getClass().getResource("Companie.fxml"));
 

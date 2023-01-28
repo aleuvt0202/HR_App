@@ -13,6 +13,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * @author Alexandra Cojocari
+ * @since november 2022
+ */
+
 public class HelloApplication extends Application {
 
     public static void main(String[] args)

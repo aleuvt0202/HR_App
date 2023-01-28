@@ -9,6 +9,12 @@ public class DataBase {
     public Connection con;
 
     //conexiune la db
+
+    /**
+     * <h1>Baza de date.</h1>
+     * Am facut o clasa java speciala pentru baza de date pentru
+     * a face mai usor conectarea la ea cand este nevoie in alte clase.
+     */
     public Connection getConnection() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");

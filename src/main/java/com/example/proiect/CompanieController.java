@@ -50,6 +50,14 @@ public class CompanieController {
     private Button adauga;
 
 
+    /**
+     * <h1>CompanieController:</h1>
+     * Acest controler este folosit pentru a vizualiza si aduga departamente ale companiei.
+     * @param actionEvent Pentru intoarcerea la pagina principala si adaugarea departamentelor.
+     * @throws IOException
+     * @throws SQLException
+     * @throws ClassNotFoundException
+     */
 
     public void inapoi(ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("logat.fxml"));

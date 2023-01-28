@@ -31,6 +31,8 @@ public class CalcSalarController {
 
     @FXML
     private Button inapoi;
+    @FXML
+    private Button calc;
     
     @FXML
     private TextField id;
@@ -60,6 +62,18 @@ public class CalcSalarController {
     private TableColumn<Confidential, Integer> colConcediu;
 
 
+    /**
+     * <h1>CalcSalarController:</h1>
+     * Prezinta posibilitatea de a da update la datele din baza de date<br>
+     * In baza de date se afla tabela Confidential ce contine salariul, bonusul, zilele de cncediu
+     * ale salariatului, cat si id-ul acestuia.<br>
+     * Prin intermediul interfetei aplicatiei se pot face modificari la nivelul bazei de date si se
+     * pot observa schimbari imediat dupa efectuarea acestei operatii.
+     * @param actionEvent Folosit pentru a ne intoarce la pagina principala, dar si pentru efectuarea modificarilor la nivelul bazei de date.
+     * @throws IOException
+     * @throws SQLException
+     * @throws ClassNotFoundException
+     */
     public void inapoi(javafx.event.ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("logat.fxml"));
 
@@ -67,6 +81,12 @@ public class CalcSalarController {
         window.setScene(new Scene(root, 600, 400));
     }
 
+    public void calcSalar(javafx.event.ActionEvent actionEvent) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Calculare.fxml"));
+
+        Stage window= (Stage) inapoi.getScene().getWindow();
+        window.setScene(new Scene(root, 600, 400));
+    }
 
     public void update(javafx.event.Event actionEvent) throws SQLException, ClassNotFoundException {
         if((id.getText()).equals("")){
@@ -88,6 +108,7 @@ public class CalcSalarController {
         }
 
     }
+
 
     public static ObservableList<Confidential> getAll() throws ClassNotFoundException, SQLException {
         DataBase connectionClass = new DataBase();

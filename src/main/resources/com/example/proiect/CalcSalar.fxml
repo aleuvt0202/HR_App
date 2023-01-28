@@ -10,9 +10,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="389.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiect.CalcSalarController">
+<AnchorPane prefHeight="389.0" prefWidth="603.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiect.CalcSalarController">
    <children>
-      <Button id="glass" fx:id="adaugare" layoutX="80.0" layoutY="229.0" mnemonicParsing="false" onAction="#update" onMouseClicked="#update" stylesheets="@style.css" text="update">
+      <Button id="glass" fx:id="adaugare" layoutX="38.0" layoutY="229.0" mnemonicParsing="false" onAction="#update" onMouseClicked="#update" stylesheets="@style.css" text="update">
          <font>
             <Font size="13.0" />
          </font>
@@ -58,6 +58,7 @@
         </columns>
       </TableView>
       <Label fx:id="text1" layoutX="274.0" layoutY="334.0" prefHeight="34.0" prefWidth="235.0" />
+      <Button id="glass" fx:id="calc" layoutX="109.0" layoutY="230.0" mnemonicParsing="false" onAction="#calcSalar" onMouseClicked="#calcSalar" stylesheets="@style.css" text="Calculare salar" />
 
    </children>
 </AnchorPane>

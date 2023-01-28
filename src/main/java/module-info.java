@@ -7,6 +7,9 @@ module com.example.proiect {
     requires org.kordamp.bootstrapfx.core;
     requires java.sql;
     requires java.desktop;
+    requires org.testng;
+    requires org.junit.jupiter.api;
+    requires junit;
 
     opens com.example.proiect to javafx.fxml;
     exports com.example.proiect;

@@ -3,7 +3,7 @@ package com.example.proiect;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 
-public class Confidential{
+public class Confidential extends Angajat{
     private IntegerProperty idP;
     private IntegerProperty salarP;
     private IntegerProperty bonusP;
@@ -15,6 +15,13 @@ public class Confidential{
         this.bonusP=new SimpleIntegerProperty();
         this.concediuP=new SimpleIntegerProperty();
     };
+
+    /**
+     * <h1>Clasa Confidential contine:</h1>
+     * ->id salariat<br>
+     * ->salar si bonus<br>
+     * ->zile de concediu
+     */
 
     //angID
     public int getIdP() {
@@ -69,7 +76,19 @@ public class Confidential{
         return concediuP;
     }
 
+    public int calculareLunar(int salar,int bonus, int concediu){
+        int total;
+        total=salar+bonus+(concediu*100);
+        System.out.printf(String.valueOf(total));
+        return total;
+    };
 
+    public int calculareAn(int salar,int bonus, int concediu){
+        int total;
+        total=12*(salar+bonus+(concediu*50));
+        System.out.printf(String.valueOf(total));
+        return total;
+    };
 
 
 }

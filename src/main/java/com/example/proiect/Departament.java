@@ -17,6 +17,11 @@ public class Departament {
         this.deptNr=new SimpleIntegerProperty();
     }
 
+    /**
+     * <h1>Clasa Departament contine datele:</h1>
+     * ->nume departament, locatie si id
+     */
+
     public String getDept() {
         return dept.get();
     }
