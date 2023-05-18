@@ -1,16 +1,17 @@
-# Programare3
-Proiectul prezinta o aplicatie Java realizata cu JavaFx. Tema este managmentul angajatilor dintr-o firma.
-# Aplicatie
-Ca si structura prezinta fisiere FXML care au fost folosite pentru implementarea interfetei si clase Java pentru controller si implementarea claselor.<br>
-Clasa Departament-Clasa Angajat-Clasa Confidential<br>
-Clasa Departament:<br>
-->contine locatia, numele departamentului si id-ul departamentului<br>
-Clasa angajat:<br>
-->contine id angajat, nume, prenume si departamentul din care face parte<br>
-Clasa Confidential:<br>
-->contine salariul, bonusul, zilele de concediu si id-ul angajatului<br>
-# Functionalitati
-Aplicatia ofera posibilitatea de:<br>
-->a adauga, sterge ->angajati, departamente<br>
-->a modifica bonusul si zilele de concediu<br>
-->a calcula salariul lunar si anual al angajatilor<br>
+# HR App
+The project presents a Java application made with JavaFx. The topic is the management of employees in a company.<br>
+The data from the app is not in english.
+# Application
+As the structure, it presents FXML files that were used to implement the interface and Java classes for the controller and the implementation of the classes.<br>
+Department Class-Employee Class-Confidential Class<br>
+Class Department:<br>
+->contains the location, department name and department id<br>
+Employee class:<br>
+->contains employee id, name, first name and the department he belongs to<br>
+Class Confidential:<br>
+->contains salary, bonus, vacation days and employee ID<br>
+# Functionalities
+The application offers the possibility of:<br>
+->add, delete ->employees, departments<br>
+-> to modify the bonus and vacation days<br>
+-> to calculate the monthly and annual salary of the employees<br>
